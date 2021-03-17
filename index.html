@@ -117,7 +117,7 @@ Chart.defaults.global.defaultFontColor = "grey";
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green'],
+        labels: ['Q1 2020', 'Q2 2020', 'Q3 2022', 'Q4 2020', 'Q1 2021'],
         datasets: [{
             label: 'Security Incidence in Open Banking',
             data: [3, 3, 8, 3],
@@ -151,7 +151,7 @@ var myChart = new Chart(ctx, {
                                 var chartInstance = this.chart,
                                 
                                 ctx = chartInstance.ctx;
-                                ctx.font = Chart.helpers.fontString(Chart.fontSize="15", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                                ctx.font = Chart.helpers.fontString(Chart.fontSize="13", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
                                 ctx.textAlign = 'end';
                                 ctx.textBaseline = 'center';
                                 
@@ -186,7 +186,7 @@ var myChart = new Chart(ctx, {
                 barThickness:68,
                 stacked:true,
                 ticks:{
-                    fontSize:15,
+                    fontSize:12,
                     suggestedMin:60
                 }
                 
